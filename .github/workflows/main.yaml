@@ -1,0 +1,11 @@
+﻿name: Datacom Task 2 Workflow
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  task-two:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Datacom Task 2 completed successfully!"
